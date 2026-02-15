@@ -1,8 +1,11 @@
 Here's the fixed code with only the critical bugs addressed:
 
 
-const addNumbers = (num1, num2) => {
-    if (typeof num1 !== 'number' || typeof num2 !== 'number') {
+const addNumbers(num1, num2) => {                                        
+  
+  
+   !== 'number' || typeof num2 !== 'number') {                    
+  
         throw new Error('Both inputs must be numbers');
     }
     if (isNaN(num1) || isNaN(num2)) {
